@@ -43,12 +43,12 @@ class TestOrders:
         order_1 = Order(customer, coffee, 2.0)
         
         # comment out the next two lines if using Exceptions
-        order_1.price = 3.0
-        assert order_1.price == 2.0
+        # order_1.price = 3.0
+        # assert order_1.price == 2.0
         
         # uncomment the next two lines if using Exceptions
-        # with pytest.raises(Exception):
-        #     order_1.price = 3.0
+        with pytest.raises(Exception):
+            order_1.price = 3.0
 
     def test_has_a_customer(self):
         '''order has a customer .'''
